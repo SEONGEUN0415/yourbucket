@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>explore</title>
+    <link rel="stylesheet" href="css/explore.css" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div id="wrap">
+      <header class="header" id="header">
+        <div class="inner">
+          <span><img src="../img/Arrow-Right.png" alt="back" /></span>
+          <h1><img src="img/yourbucket-logo.png" alt="logo-icon" />Explore</h1>
+          <nav>
+            <ul>
+              <li>
+                <a href="../index.html">
+                  <img src="../img/home.png" alt="home" />
+                  <p>HOME</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="../img/explore-active.png" alt="explore" />
+                  <p>EXPLORE</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="../img/list.png" alt="list" />
+                  <p>LIST</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="../img/Person.png" alt="profile" />
+                  <p>PROFILE</p>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <!-- nav end -->
+        </div>
+        <!-- .inner end -->
+      </header>
+      <!-- .header end -->
+      <main id="main">
+        <div class="inner">
+          <section class="cont01">
+            <div class="title">
+              <h2>Explore New Idea</h2>
+            </div>
+            <!-- .title end -->
+            <div class="category">
+              <ul>
+                <li><a href="">Dine Out</a></li>
+                <li><a href="">Outdoor</a></li>
+                <li><a href="">Family</a></li>
+                <li><a href="">Movie</a></li>
+                <li><a href="">Art</a></li>
+                <li><a href="">Wellbeing</a></li>
+                <li><a href="">Coffee</a></li>
+                <li><a href="">Nightlife</a></li>
+                <li><a href="">Societies</a></li>
+                <li><a href="">Shopping</a></li>
+                <li><a href="">Admin</a></li>
+                <li><a href="">Sight Seeing</a></li>
+              </ul>
+            </div>
+            <!-- .category end -->
+          </section>
+          <!-- .cont01 end -->
+          <section class="cont02">
+            <div class="title">
+              <h2>Same Location with Your List</h2>
+              <img src="../img/Arrow-Right.png" alt="arrow-right" />
+            </div>
+            <!-- .title end -->
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="info">
+                    <img src="img/location-red.png" alt="location-red" />
+                    <img src="../img/icelandflag.jpg" alt="iceland-flag" />
+                    <p>Iceland</p>
+                  </div>
+                  <!-- .info end -->
+                  <figure>
+                    <img src="img/iceland-cave.jpg" alt="iceland-cave" />
+                  </figure>
+                  <div class="detail__info">
+                    <h3>아이슬란드 얼음동굴 투어하기</h3>
+                    <p>Sight Seeing</p>
+                  </div>
+                </div>
+                <!-- swiper-slide end -->
+                <div class="swiper-slide">
+                  <div class="info">
+                    <img src="img/location-red.png" alt="location-red" />
+                    <img src="img/mexico-flag.jpg" alt="mexico-flag" />
+                    <p>Mexico</p>
+                  </div>
+                  <!-- .info end -->
+                  <figure>
+                    <img
+                      src="img/mexico-restaurant.jpg"
+                      alt="maxico-restaurant"
+                    />
+                  </figure>
+                  <div class="detail__info">
+                    <h3>멕시코에서 타코맛집 탐방하기</h3>
+                    <p>Dine Out</p>
+                  </div>
+                </div>
+                <!-- swiper-slide end -->
+                <div class="swiper-slide">
+                  <div class="info">
+                    <img src="img/location-red.png" alt="location-red" />
+                    <img src="img/mexico-flag.jpg" alt="mexico-flag" />
+                    <p>Mexico</p>
+                  </div>
+                  <!-- .info end -->
+                  <figure>
+                    <img
+                      src="img/mexico-restaurant.jpg"
+                      alt="maxico-restaurant"
+                    />
+                  </figure>
+                  <div class="detail__info">
+                    <h3>멕시코에서 타코맛집 탐방하기</h3>
+                    <p>Dine Out</p>
+                  </div><!-- .detail__info end -->
+                </div>
+                <!-- swiper-slide end -->
+              </div>
+            </div>
+            <!-- .swiper end -->
+          </section>
+          <!-- .cont02 end -->
+        </div>
+      </main>
+      <!-- #main end -->
+    </div>
+    <!-- #wrap end -->
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1.5,
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+  </body>
+</html>

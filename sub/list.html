@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>list</title>
+  </head>
+  <body>
+    <div id="wrap">
+      <header class="header" id="header">
+        <div class="inner">
+          <h1><img src="img/main-logo.png" alt="logo" /></h1>
+          <nav>
+            <ul>
+              <li>
+                <a href="#">
+                  <img src="img/home-actvie.jpg" alt="home" />
+                  <p>HOME</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/explore.png" alt="explore" />
+                  <p>EXPLORE</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/list.png" alt="list" />
+                  <p>LIST</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/Person.png" alt="profile" />
+                  <p>PROFILE</p>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!-- .inner end -->
+      </header>
+      <!-- .header end -->
+      <main id="main">
+        <div class="inner">
+          <section class="cont01">
+            <div class="title">
+              <h2>Make Your Own List</h2>
+            </div>
+            <!-- .title end -->
+            <input type="text" placeholder="새로운 버킷리스트를 작성하세요!" />
+            <div class="list">
+              <div class="box">
+                <input id="check01" name="checkList" type="checkbox" value="check01" />
+                <label for="check01">아이슬란드 온천하러 가기</label>
+                <span><i class="fa-solid fa-trash-can"></i></span>
+              </div><!-- .box end -->
+              <div class="box">
+                <input id="check02" name="checkList" type="checkbox" value="check02" checked />
+                <label for="check02">치앙마이에서 한달살기</label>
+                <input type="date" name="completedDate" >
+                <span><i class="fa-solid fa-trash-can"></i></span>
+              </div><!-- .box end -->
+              <div class="box">
+                <input id="check03" name="checkList" type="checkbox" value="check03" />
+                <label for="check03">Royal Caribbean 크루즈 타기</label>
+                <span><i class="fa-solid fa-trash-can"></i></span>
+              </div><!-- .box end -->
+              <div class="box">
+                <input id="check04" name="checkList" type="checkbox" value="check04" />
+                <label for="check04"> 기차타고 유럽여행하기 </label>
+                <span><i class="fa-solid fa-trash-can"></i></span>
+              </div><!-- .box end -->
+              <div class="box">
+                <input id="check05" name="checkList" type="checkbox" value="check05" />
+                <label for="check05">멕시코에서 스페인어 학원 다니면서 ...</label>
+                <span><i class="fa-solid fa-trash-can"></i></span>
+              </div><!-- .box end -->
+              <div class="box">
+                <input id="check06" name="checkList" type="checkbox" value="check06" checked />
+                <label for="check06">시베리아 횡단열차타기</label>
+                <input type="date" name="completedDate">
+                <span><i class="fa-solid fa-trash-can"></i></span>
+              </div><!-- .box end -->
+            </div><!-- .list end -->
+          </section>
+          <!-- .cont01 end -->
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

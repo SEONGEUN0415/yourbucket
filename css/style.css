@@ -1,0 +1,233 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+li{
+    list-style: none;
+}
+html, body{
+    font-size: 62.5%;
+}
+body{
+    position: relative;
+    color: #333;
+    word-break: keep-all;
+    line-height: 1.3;
+    background: rgb(123,97,255);
+    background: linear-gradient(180deg, rgba(123,97,255,1) 0%, rgba(255,111,111,0.4962359943977591) 100%);
+}
+.inner{
+    width: calc(100% - 30px);
+    max-width: 1440px;
+    margin: 0 auto;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* header */
+.header {
+    height: 115px;
+    background-color: #fff;
+    
+}
+.header .inner{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.header nav{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 9999;
+}
+.header nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    row-gap: 8px;
+    padding: 18px 41px;
+}
+.header nav ul li{
+    text-align: center;
+}
+.header nav ul li img{
+    width: 25px;
+    height: 25px;
+    margin-bottom: 5px;
+}
+
+
+
+
+/* main */
+section{
+    margin: 5rem 0;
+}
+.title h2{
+    color: #fff;
+    font-size: 2.2rem; 
+    margin-bottom: 15px;
+}
+
+.cont01 .swiper .swiper-slide {
+    position: relative;
+}
+.cont01 .swiper .swiper-slide > div{
+    background-color: #0b1c3f7c;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.cont01 .swiper .swiper-slide div .sub__title h3{
+    font-size: 18px;
+}
+.cont01 .swiper .swiper-slide div .info{
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+.cont01 .swiper .swiper-slide div .info > span{
+    font-size: 14px;
+}
+.cont01 .swiper .swiper-slide div .info .number span{
+    font-size: 13px;
+    margin-right: 10px;
+}
+.cont01 .swiper .swiper-slide div .info .number span i{
+    margin-right: 5px;
+}
+.cont01 .swiper .swiper-slide figure{
+    max-height: 202px;
+    height: 51.79vw;
+}
+
+
+/* cont02 */
+.cont02 .list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+.cont02 .list .item strong{
+    color: #fff;
+    border-radius: 10px;
+    background-color: #7B61FF;
+    display: block;
+    width: 92px;
+    height: 21px;
+    text-align: center;
+    line-height: 21px;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+.cont02 .list .item .info {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 8px;
+}
+.cont02 .list .item .info figure{
+    width: 50%;
+    height: 45.12vw;
+}
+.cont02 .list .item .info div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 8px;
+}
+.cont02 .list .item .info h3{
+    font-size: 18px;
+}
+.cont02 .list .item .info div p{
+    display: flex;
+    column-gap: 5px;
+    font-size: 12px;
+    position: relative;
+}
+.cont02 .list .item .info div p::after{
+    content:'';
+    background: url(../img/Arrow-Right.png) center / 100% no-repeat;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.cont02 .list .item .info div p span img{
+    width: 20px;
+    height: 13px;
+}
+
+/* cont03 */
+.cont03 .title{
+    margin-bottom: 2rem;
+}
+.cont03 .title p{
+    margin-top: 8px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.cont03 .list{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 8px;
+}
+.cont03 .list .item{
+    width: calc(100% / 2);
+    position: relative;
+}
+
+.cont03 .list .item figure{
+    max-height: 225px;
+    height: 115vw;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.cont03 .list .item div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.cont03 .list .item div h3{
+    background-color: #7B61FF;
+    color: #fff;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 15px 15px 0 0;
+}
+.cont03 .list .item div p{
+    padding: 15px;
+    font-size: 14px;
+    color: #fff;
+}
+/* footer */
+.footer{
+    text-align: center;
+    padding: 45px 0 100px;
+    color: #ABABAB;
+}
