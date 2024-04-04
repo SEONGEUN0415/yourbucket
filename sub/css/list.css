@@ -1,0 +1,205 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    font-size: 62.5%;
+}
+body{
+    color: #333;
+    line-height: 1.3;
+    
+}
+
+.inner{
+    width: calc(100% - 30px);
+    max-width: 1440px;
+    margin: 0 auto;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+li{
+    list-style: none;
+}
+/* header */
+.header {
+    height: 115px;
+    background-color: #fff;
+    
+}
+.header .inner{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 50%;
+}
+.header nav{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 9999;
+    
+}
+.header nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    row-gap: 8px;
+    padding: 18px 41px;
+}
+.header nav ul li{
+    text-align: center;
+}
+.header nav ul li img{
+    width: 25px;
+    height: 25px;
+    margin-bottom: 5px;
+}
+
+/* main */
+.title h2{
+    font-size: 2.2rem;
+}
+.cont01{
+    font-size: 18px;
+}
+.cont01 .title{
+    margin-bottom: 15px;
+}
+.cont01 input[type="text"]{
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    border-bottom: solid 1px #333;
+    outline: 0;
+    margin-bottom: 15px;
+}
+.cont01 .list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 8px;
+}
+.cont01 .list .box{
+    display: flex;
+    border-radius: 30px; 
+    width: 92.30%;
+    height: 40px; 
+    background-color: #7b61ff62;
+    position: relative;
+    padding: 10px 14px;
+}
+.cont01 .list .box input[type="checkbox"]{
+    display: none;
+}
+.cont01 .list .box label{
+    margin-left: 20px;
+    position: relative;
+}
+.cont01 .list .box label::before{
+    content: '';
+    background: url(../img/check-grey.png) center/ 100% no-repeat;
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+}
+.cont01 .list .box span{
+    position: absolute;
+    top:50%;
+    right: -15px;
+    transform: translate(50%, -50%);
+}
+.cont02{
+    font-size: 18px;
+    margin: 50px 0 130px;
+}
+.cont02 .title{
+    margin-bottom: 20px;
+}
+.cont02 .title h2{
+    margin-bottom: 8px; 
+    font-size: 2.2rem;
+}
+.cont02 .title p{
+    font-size: 12px;
+}
+.cont02 .memory{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+}
+.cont02 .memory li{
+    height: 33.58vw;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+}
+.cont02 .memory li .title{
+    color: #fff;
+}
+
+.cont02 .memory .waiting{
+    background: url(../img/russia.jpg) center / cover no-repeat;
+}
+
+.cont02 .memory .waiting .option__btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 8px;
+
+}
+.cont02 .memory .waiting .option__btn p{
+    background-color: #fff;
+    border-radius: 20px; 
+    padding: 1rem;
+    font-size: 12px;
+    width: 100%;
+    text-align: center;
+}
+.cont02 .memory .completed{
+    background: url(../../img/thai-img.jpg) center / cover no-repeat;
+}
+.cont02 .memory .completed .option__btn {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    align-items: center;
+}
+.cont02 .memory .completed .option__btn .num span{
+    margin-right: 5px;
+    font-size: 13px;
+}
+.cont02 .memory .completed .option__btn p{
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 20px;
+    font-size: 12px;
+    color: #333;
+    padding: 10px;
+    width: 20%;
+    height: 8.97vw;
+    height: 35px;
+    text-align: center;
+
+}

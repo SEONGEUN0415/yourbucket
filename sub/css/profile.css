@@ -50,15 +50,21 @@ li{
     margin-top: 83px;
     border-radius: 35px;
     padding: 68px 18px;
+    height: 614px;
 }
 .box .profile__image{
     width: 116px;
     height: 116px;
     border-radius: 50%;
     position: absolute;
-    top:0;
+    top:180px;
     left:50%;
     transform: translate(-50%,-50%);
+}
+.box .profile__image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .box .info{
     margin-bottom: 40px;
@@ -69,6 +75,9 @@ li{
     justify-content: space-between;
     align-items: center;
     margin-bottom: 40px;
+}
+.box .list li:last-child a{
+    margin-bottom: 0;
 }
 .box .list li .title{
     display:flex;
@@ -82,6 +91,9 @@ li{
     color: #fff;
     text-align: center;
     width: 176px;
-    height: 74px;
+    height: 65px;
     border-radius: 15px;
+    display: block;
+    margin: 18px auto;
+    font-size: 12px;
 }

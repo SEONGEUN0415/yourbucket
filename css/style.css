@@ -8,6 +8,7 @@
 a{
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
 }
 li{
     list-style: none;
@@ -81,9 +82,35 @@ section{
     font-size: 2.2rem; 
     margin-bottom: 15px;
 }
+.swiper-pagination-bullet{
+    background: #333;
+    border: 1px solid #333;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: #fff;
+}
 
 .cont01 .swiper .swiper-slide {
     position: relative;
+}
+.cont01 .swiper .swiper-slide:last-child {
+    border: 2px solid #333;
+    backdrop-filter: blur(3px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffffd5;
+    border-radius: 5px;
+}
+.cont01 .swiper .swiper-slide:last-child a figure{
+    display: flex;
+    align-items: center;
+    
+}
+.cont01 .swiper .swiper-slide:last-child a figure img{
+    width: 30px;
+    height: 30px;
 }
 .cont01 .swiper .swiper-slide > div{
     background-color: #0b1c3f7c;
@@ -93,7 +120,7 @@ section{
     align-items: center;
     padding: 15px;
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 0;
     width: 100%;
 }
@@ -107,6 +134,16 @@ section{
 }
 .cont01 .swiper .swiper-slide div .info > span{
     font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+.cont01 .swiper .swiper-slide div .info > span::before{
+    content: '';
+    width: 11px;
+    height: 14px;
+    display: inline-block;
+    background: url('../img/location.png') center / 100% no-repeat;
+    margin-right: 5px;
 }
 .cont01 .swiper .swiper-slide div .info .number span{
     font-size: 13px;
@@ -142,18 +179,23 @@ section{
 .cont02 .list .item .info {
     display: flex;
     justify-content: space-between;
-    column-gap: 8px;
+    box-shadow: 5px 5px 5px;
+    border-radius: 5px;
 }
 .cont02 .list .item .info figure{
-    width: 50%;
+    width: 65%;
     height: 45.12vw;
 }
 .cont02 .list .item .info div{
-    width: 50%;
+    width: 35%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     row-gap: 8px;
+    background-color: #FBEAFF;
+    padding: 10px;
+   
+    
 }
 .cont02 .list .item .info h3{
     font-size: 18px;
@@ -195,13 +237,14 @@ section{
 .cont03 .list .item{
     width: calc(100% / 2);
     position: relative;
+    box-shadow: 5px 5px 5px;
+     overflow: hidden;
+     border-radius: 15px;
 }
 
 .cont03 .list .item figure{
     max-height: 225px;
     height: 115vw;
-    border-radius: 15px;
-    overflow: hidden;
 }
 .cont03 .list .item div{
     display: flex;
@@ -217,7 +260,7 @@ section{
     background-color: #7B61FF;
     color: #fff;
     padding: 15px;
-    font-size: 18px;
+    font-size: 16px;
     border-radius: 15px 15px 0 0;
 }
 .cont03 .list .item div p{
