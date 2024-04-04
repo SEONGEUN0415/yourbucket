@@ -48,8 +48,7 @@ img {
 .header .inner {
     height: 100%;
     display: flex;
-    align-items: end;
-    padding: 0 18px 28px;
+    align-items: center;
     justify-content: space-between;
 }
 .header .inner span img {
@@ -149,7 +148,7 @@ img {
 .cont02 .swiper-slide{
   padding: 15px;
   background-color: #fff;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .cont02 .swiper .info {
     display: flex;
@@ -170,8 +169,7 @@ img {
 .cont02 .swiper figure {
     max-height: 500px;
     height: 45.38vw;
-    border-radius: 8px;
-    overflow: hidden;
+   
 }
 .cont02 .swiper figure img {
     width: 100%;
