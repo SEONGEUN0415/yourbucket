@@ -149,7 +149,7 @@ img {
 .cont02 .swiper-slide{
   padding: 15px;
   background-color: #fff;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 .cont02 .swiper .info {
     display: flex;
