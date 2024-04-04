@@ -93,6 +93,9 @@ section{
 
 .cont01 .swiper .swiper-slide {
     position: relative;
+    overflow: hidden;
+    border: 2px solid #333;
+    border-radius: 5px;
 }
 .cont01 .swiper .swiper-slide:last-child {
     border: 2px solid #333;
