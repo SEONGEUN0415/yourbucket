@@ -49,15 +49,14 @@ li{
     background-color: #fff;
     margin-top: 83px;
     border-radius: 35px;
-    padding: 68px 18px;
-    height: 614px;
+    padding: 75px 18px 5px
 }
 .box .profile__image{
     width: 116px;
     height: 116px;
     border-radius: 50%;
     position: absolute;
-    top: 150px;
+    top: 160px;
     left: 50%;
     transform: translate(-50%,-50%);
 }
