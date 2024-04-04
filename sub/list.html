@@ -1,181 +1,252 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>list</title>
-    <script
-      src="https://kit.fontawesome.com/fdf75b0975.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="css/list.css" />
-  </head>
-  <body>
-    <div id="wrap">
-      <header class="header" id="header">
-        <div class="inner">
-          <span><a href="../index.html"><img src="../img/Arrow-Right.png" alt="back" /></a></span>
-          <h1><img src="img/yourbucket-logo.png" alt="logo-icon" />List</h1>
-          <nav>
-            <ul>
-              <li>
-                <a href="../index.html">
-                  <img src="../img/home.png" alt="home" />
-                  <p>HOME</p>
-                </a>
-              </li>
-              <li>
-                <a href="explore.html">
-                  <img src="../img/explore.png" alt="explore" />
-                  <p>EXPLORE</p>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="../img/list-active.png" alt="list" />
-                  <p>LIST</p>
-                </a>
-              </li>
-              <li>
-                <a href="profile.html">
-                  <img src="../img/Person.png" alt="profile" />
-                  <p>PROFILE</p>
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <!-- .inner end -->
-      </header>
-      <!-- .header end -->
-      <main id="main">
-        <div class="inner">
-          <section class="cont01">
-            <div class="title">
-              <h2>Make Your Own List</h2>
-            </div>
-            <!-- .title end -->
-            <div class="input--text">
-              <input type="text" placeholder="새로운 버킷리스트를 작성하세요!" />
-            </div>
-            
-            <div class="list">
-              <div class="box">
-                <input
-                  id="check01"
-                  name="checkList"
-                  type="checkbox"
-                  value="check01"
-                />
-                <label for="check01">아이슬란드 온천하러 가기</label>
-                <span><i class="fa-solid fa-trash-can"></i></span>
-              </div>
-              <!-- .box end -->
-              <div class="box">
-                <input
-                  id="check02"
-                  name="checkList"
-                  type="checkbox"
-                  value="check02"
-                  checked
-                />
-                <label for="check02">치앙마이에서 한달살기</label>
-                <span><i class="fa-solid fa-trash-can"></i></span>
-              </div>
-              <!-- .box end -->
-              <div class="box">
-                <input
-                  id="check03"
-                  name="checkList"
-                  type="checkbox"
-                  value="check03"
-                />
-                <label for="check03">Royal Caribbean 크루즈 타기</label>
-                <span><i class="fa-solid fa-trash-can"></i></span>
-              </div>
-              <!-- .box end -->
-              <div class="box">
-                <input
-                  id="check04"
-                  name="checkList"
-                  type="checkbox"
-                  value="check04"
-                />
-                <label for="check04"> 기차타고 유럽여행하기 </label>
-                <span><i class="fa-solid fa-trash-can"></i></span>
-              </div>
-              <!-- .box end -->
-              <div class="box">
-                <input
-                  id="check05"
-                  name="checkList"
-                  type="checkbox"
-                  value="check05"
-                />
-                <label for="check05"
-                  >멕시코에서 스페인어 학원 다니면서 ...</label
-                >
-                <span><i class="fa-solid fa-trash-can"></i></span>
-              </div>
-              <!-- .box end -->
-              <div class="box">
-                <input
-                  id="check06"
-                  name="checkList"
-                  type="checkbox"
-                  value="check06"
-                  checked
-                />
-                <label for="check06">시베리아 횡단열차타기</label>
-                <span><i class="fa-solid fa-trash-can"></i></span>
-              </div>
-              <!-- .box end -->
-            </div>
-            <!-- .list end -->
-          </section>
-          <!-- .cont01 end -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>list</title>
+        <script
+            src="https://kit.fontawesome.com/fdf75b0975.js"
+            crossorigin="anonymous"
+        ></script>
+        <link rel="stylesheet" href="css/list.css" />
+    </head>
+    <body>
+        <div id="wrap">
+            <header class="header" id="header">
+                <div class="inner">
+                    <span
+                        ><a href="../index.html"
+                            ><img src="../img/Arrow-Right.png" alt="back" /></a
+                    ></span>
+                    <h1>
+                        <img
+                            src="img/yourbucket-logo.png"
+                            alt="logo-icon"
+                        />List
+                    </h1>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="../index.html">
+                                    <img src="../img/home.png" alt="home" />
+                                    <p>HOME</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="explore.html">
+                                    <img
+                                        src="../img/explore.png"
+                                        alt="explore"
+                                    />
+                                    <p>EXPLORE</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img
+                                        src="../img/list-active.png"
+                                        alt="list"
+                                    />
+                                    <p>LIST</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="profile.html">
+                                    <img
+                                        src="../img/Person.png"
+                                        alt="profile"
+                                    />
+                                    <p>PROFILE</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- .inner end -->
+            </header>
+            <!-- .header end -->
+            <main id="main">
+                <div class="inner">
+                    <section class="cont01">
+                        <div class="title">
+                            <h2>Make Your Own List</h2>
+                        </div>
+                        <!-- .title end -->
+                        <div class="input--text">
+                            <input
+                                type="text"
+                                placeholder="새로운 버킷리스트를 작성하세요!"
+                            />
+                        </div>
 
-          <section class="cont02">
-            <div class="title">
-              <h2>Completed List</h2>
-              <p>완료된 버킷리스트에 대한 추억을 남겨보세요</p>
-            </div>
-            <!-- .title end -->
-            <ul class="memory">
-              <li class="waiting">
-                <div class="title">
-                  <h3>시베리아 횡단열차타기</h3>
+                        <div class="list">
+                            <div class="box">
+                                <input
+                                    id="check01"
+                                    name="checkList"
+                                    type="checkbox"
+                                    value="check01"
+                                />
+                                <label for="check01"
+                                    >아이슬란드 온천하러 가기</label
+                                >
+                                <span
+                                    ><i class="fa-solid fa-trash-can"></i
+                                ></span>
+                            </div>
+                            <!-- .box end -->
+                            <div class="box">
+                                <input
+                                    id="check02"
+                                    name="checkList"
+                                    type="checkbox"
+                                    value="check02"
+                                    checked
+                                />
+                                <label for="check02"
+                                    >치앙마이에서 한달살기</label
+                                >
+                                <span
+                                    ><i class="fa-solid fa-trash-can"></i
+                                ></span>
+                            </div>
+                            <!-- .box end -->
+                            <div class="box">
+                                <input
+                                    id="check03"
+                                    name="checkList"
+                                    type="checkbox"
+                                    value="check03"
+                                />
+                                <label for="check03"
+                                    >Royal Caribbean 크루즈 타기</label
+                                >
+                                <span
+                                    ><i class="fa-solid fa-trash-can"></i
+                                ></span>
+                            </div>
+                            <!-- .box end -->
+                            <div class="box">
+                                <input
+                                    id="check04"
+                                    name="checkList"
+                                    type="checkbox"
+                                    value="check04"
+                                />
+                                <label for="check04">
+                                    기차타고 유럽여행하기
+                                </label>
+                                <span
+                                    ><i class="fa-solid fa-trash-can"></i
+                                ></span>
+                            </div>
+                            <!-- .box end -->
+                            <div class="box">
+                                <input
+                                    id="check05"
+                                    name="checkList"
+                                    type="checkbox"
+                                    value="check05"
+                                />
+                                <label for="check05"
+                                    >멕시코에서 스페인어 학원 다니면서
+                                    ...</label
+                                >
+                                <span
+                                    ><i class="fa-solid fa-trash-can"></i
+                                ></span>
+                            </div>
+                            <!-- .box end -->
+                            <div class="box">
+                                <input
+                                    id="check06"
+                                    name="checkList"
+                                    type="checkbox"
+                                    value="check06"
+                                    checked
+                                />
+                                <label for="check06"
+                                    >시베리아 횡단열차타기</label
+                                >
+                                <span
+                                    ><i class="fa-solid fa-trash-can"></i
+                                ></span>
+                            </div>
+                            <!-- .box end -->
+                        </div>
+                        <!-- .list end -->
+                    </section>
+                    <!-- .cont01 end -->
+
+                    <section class="cont02">
+                        <div class="title">
+                            <h2>Completed List</h2>
+                            <p>완료된 버킷리스트에 대한 추억을 남겨보세요</p>
+                        </div>
+                        <!-- .title end -->
+                        <ul class="memory">
+                            <li class="waiting">
+                                <div class="title">
+                                    <h3>시베리아 횡단열차타기</h3>
+                                </div>
+                                <!-- .title end -->
+                                <div class="option__btn">
+                                    <p><a href="#">영상올리기</a></p>
+                                    <p><a href="#">글쓰기</a></p>
+                                    <p><a href="#">사진올리기</a></p>
+                                </div>
+                                <!-- .option__btn end -->
+                            </li>
+                            <li class="completed">
+                                <div class="title">
+                                    <h3>치앙마이에서 한달살기</h3>
+                                </div>
+                                <!-- .title end -->
+                                <div class="option__btn">
+                                    <div class="num">
+                                        <span
+                                            ><i class="fa-regular fa-heart"></i
+                                            >160</span
+                                        >
+                                        <span
+                                            ><i
+                                                class="fa-regular fa-comment"
+                                            ></i
+                                            >202</span
+                                        >
+                                    </div>
+                                    <!-- .num end -->
+                                    <p><a href="#">수정하기</a></p>
+                                </div>
+                                <!-- .option__btn end -->
+                            </li>
+                        </ul>
+                        <!-- .memory end -->
+                    </section>
+                    <!-- .cont02 end -->
                 </div>
-                <!-- .title end -->
-                <div class="option__btn">
-                  <p><a href="#">영상올리기</a></p>
-                  <p><a href="#">글쓰기</a></p>
-                  <p><a href="#">사진올리기</a></p>
-                </div>
-                <!-- .option__btn end -->
-              </li>
-              <li class="completed">
-                <div class="title">
-                  <h3>치앙마이에서 한달살기</h3>
-                </div>
-                <!-- .title end -->
-                <div class="option__btn">
-                  <div class="num">
-                    <span><i class="fa-regular fa-heart"></i>160</span>
-                    <span><i class="fa-regular fa-comment"></i>202</span>
-                  </div><!-- .num end -->
-                  <p><a href="#">수정하기</a></p>
-                </div>
-                <!-- .option__btn end -->
-              </li>
-            </ul>
-            <!-- .memory end -->
-          </section>
-          <!-- .cont02 end -->
+                <!-- .inner end -->
+            </main>
+            <!-- #main end -->
         </div>
-        <!-- .inner end -->
-      </main>
-      <!-- #main end -->
-    </div>
-  </body>
+        <!-- .wrap end -->
+        <script>
+            window.onload = () => {
+               /*  let checkList = document.querySelectorAll(".cont01 .list .box");
+
+                for (let i = 0; i < checkList.length; i++) {
+                    checkList[i].addEventListener("click", () => {
+                        if (
+                            getComputedStyle(checkList[i]).backgroundColor ===
+                            "rgb(255, 255, 255)"
+                        ) {
+                            checkList[i].classList.add("on");
+                        } else {
+                            checkList[i].classList.remove("on");
+                        }
+                    });
+                } */
+            };
+        </script>
+    </body>
 </html>

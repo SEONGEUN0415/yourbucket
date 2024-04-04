@@ -125,41 +125,58 @@ li{
     justify-content: space-between;
     row-gap: 8px;
 }
-.cont01 .list .box{
+.cont01 .list .box {
+    position: relative;
+}
+.cont01 .list .box label{
     display: flex;
     border-radius: 30px; 
     width: 92.30%;
     height: 40px; 
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
     position: relative;
-    padding: 10px 14px;
+    padding: 10px 14px 10px 30px;
     border: 1px solid #333;
+}
+.cont01 .list .box input:checked + label{
+    color: #fff;
+    background-color: #7B61FF;
 }
 .cont01 .list .box input[type="checkbox"]{
     display: none;
 }
 
 .cont01 .list .box label{
-    margin-left: 20px;
-    position: relative;
     font-weight: bold;
     font-size: 14px;
+}
+
+.cont01 .list .box input:checked + label::before{
+    content: '';
+    background: url(../img/check-red.png) center/ 100% no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
 }
 .cont01 .list .box label::before{
     content: '';
     background: url(../img/check-grey.png) center/ 100% no-repeat;
     position: absolute;
     top: 50%;
-    left: -20px;
+    left: 10px;
     transform: translateY(-50%);
     width: 15px;
     height: 15px;
 }
 .cont01 .list .box span{
     position: absolute;
-    top:50%;
-    right: -7%;
-    transform: translate(50%, -50%);
+    top: 50%;
+    right: 5%;
+    transform: translate(100%, -50%);
+    color: #333;
 }
 .cont02{
     font-size: 18px;
