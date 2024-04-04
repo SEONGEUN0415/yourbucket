@@ -37,13 +37,13 @@ img {
 
 /* header */
 .header {
-    height: 115px;
-    background:#fff;
-   /*  background: linear-gradient(
-        180deg,
-        rgba(123, 97, 255, 1) 0%,
-        rgba(255, 111, 111, 0.39539565826330536) 100%
-    ); */
+    height: 80px;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
 }
 .header .inner {
     height: 100%;
@@ -56,11 +56,10 @@ img {
     display: block;
 }
 .header .inner h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 .header .inner h1 img {
-    width: 30px;
-    height: 27px;
+    width: 20px;
 }
 .header nav {
     position: fixed;
@@ -87,6 +86,9 @@ img {
 }
 
 /* main */
+#main{
+    margin-top: 110px;
+}
 .title {
     margin-bottom: 2rem;
 }
@@ -115,17 +117,15 @@ img {
     text-align: center;
     font-weight: bold;
     box-shadow: 5px 5px 5px #333;
-    
 }
-.category ul li a{
-  display: flex;
-  align-items: center;
-  column-gap: 5px;
+.category ul li a {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
 }
-.category ul li a img{
-  width: 20px;
+.category ul li a img {
+    width: 20px;
 }
-
 
 /* cont02 */
 .cont02 {
@@ -145,10 +145,10 @@ img {
 .cont02 .swiper {
     position: static;
 }
-.cont02 .swiper-slide{
-  padding: 15px;
-  background-color: #fff;
-  border-radius: 5px;
+.cont02 .swiper-slide {
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 5px;
 }
 .cont02 .swiper .info {
     display: flex;
@@ -169,7 +169,6 @@ img {
 .cont02 .swiper figure {
     max-height: 500px;
     height: 45.38vw;
-   
 }
 .cont02 .swiper figure img {
     width: 100%;
@@ -187,5 +186,4 @@ img {
 .cont02 .swiper .detail__info p {
     font-size: 12px;
     color: #ababab;
-    
 }
