@@ -47,9 +47,9 @@ li{
 }
 .box{
     background-color: #fff;
-    margin-top: 83px;
+    margin: 83px 0;
     border-radius: 35px;
-    padding: 75px 18px 5px
+    padding: 75px 18px 5px;
 }
 .box .profile__image{
     width: 116px;
