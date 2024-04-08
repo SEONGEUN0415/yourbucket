@@ -117,6 +117,15 @@ img {
     text-align: center;
     font-weight: bold;
     box-shadow: 5px 5px 5px #333;
+    animation: moving 2s infinite alternate linear;
+}
+@keyframes moving {
+    from{
+        transform: translateX(10%);
+    }
+    to{
+        transform: translatez(-10%);
+    }
 }
 .category ul li a {
     display: flex;
