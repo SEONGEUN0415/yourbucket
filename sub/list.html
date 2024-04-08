@@ -19,11 +19,14 @@
                 );
                 const list = document.querySelector(".cont01 .list");
 
-                input.addEventListener("keydown", (event) => {
+                const box = document.querySelectorAll('.cont01 .list .box')
+
+              
+              /*   input.addEventListener("keydown", (event) => {
                     if (event.keyCode === 13) {
                         onAdd();
                     }
-                });
+                }); */
 
                 add.addEventListener("click", () => {
                     //onAdd();
@@ -37,6 +40,8 @@
                     const newItem = creatItem(text);
 
                     list.append(newItem);
+                    
+                    
                 });
 
                 //list
@@ -49,13 +54,19 @@
                         //input-checkbox
                         const boxText = document.createElement("input");
                         boxText.setAttribute("type", "checkbox");
+                        boxText.setAttribute("name", "checkList");
+                        index =  box.length + 1
+                        boxText.setAttribute('id', "check0" + index);
+                        boxText.setAttribute('value', "check0" + index);
 
                         //label
                         const label = document.createElement("label");
                         label.innerHTML = text;
                         label.setAttribute("class", "item__name");
+                        label.setAttribute('for', "check0" + index)
 
                         list.appendChild(items);
+                        items.appendChild(boxText);
                         items.appendChild(label);
 
                         const item__remove = document.createElement("span");
@@ -67,6 +78,7 @@
                         item__remove.addEventListener("click", () => {
                             list.removeChild(items);
                             input.focus();
+                            
                         });
                         return items;
                     }
